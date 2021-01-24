@@ -42,18 +42,20 @@
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
+          <div id="tp-weather-widget"></div>
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    <!-- <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">lion0814</span>
+                    <span class="logo-span">lion0814</span> -->
                 </a>
             </div>
             
 
 <a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
 <ul class="right nav-menu">
+  
   
   <li class="hide-on-med-and-down nav-item">
     
@@ -121,23 +123,12 @@
     
   </li>
   
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>Friends</span>
-    </a>
-    
-  </li>
-  
   <li>
     
     <a href="#searchModal" class="modal-trigger waves-effect waves-light">
       <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
     </a>
-    <div id="tp-weather-widget"></div>
+    
   </li>
 </ul>
 
@@ -226,17 +217,6 @@
           
         </li>
         
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			友情链接
-		</a>
-          
-        </li>
-        
         
         <li><div class="divider"></div></li>
         <li>
@@ -250,20 +230,6 @@
 
 
 
-<script>
-  (function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));
-  window.SeniverseWeatherWidget('show', {
-    flavor: "slim",
-    location: "WX4FBXXFKE4F",
-    geolocation: true,
-    language: "zh-Hans",
-    unit: "c",
-    theme: "auto",
-    token: "e0eeb561-4ce1-4cda-86c8-d5c21f59994b",
-    hover: "enabled",
-    container: "tp-weather-widget"
-  })
-</script>
         </div>
 
         
@@ -327,6 +293,20 @@
 
 </header>
 
+<script>
+  (function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));
+  window.SeniverseWeatherWidget('show', {
+    flavor: "bubble",
+    location: "WX4FBXXFKE4F",
+    geolocation: true,
+    language: "zh-Hans",
+    unit: "c",
+    theme: "light",
+    token: "e0eeb561-4ce1-4cda-86c8-d5c21f59994b",
+    hover: "enabled",
+    container: "tp-weather-widget"
+  })
+</script>
     <div class="bg-cover pd-header about-cover">
     <div class="container">
     <div class="row">
