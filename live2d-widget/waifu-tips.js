@@ -8,7 +8,7 @@ function loadWidget(waifuPath, apiPath) {
 	sessionStorage.removeItem("waifu-text");
 	$("body").append(`<div id="waifu">
 			<div id="waifu-tips"></div>
-			<canvas id="live2d" width="300" height="300"></canvas>
+			<canvas id="live2d" width="250" height="250"></canvas>
 			<div id="waifu-tool">
 				<span class="fa fa-lg fa-comment"></span>
 				<span class="fa fa-lg fa-paper-plane"></span>
@@ -99,7 +99,7 @@ function loadWidget(waifuPath, apiPath) {
 	var userAction = false,
 		hitokotoTimer = null,
 		messageTimer = null,
-		messageArray = ["好久不见，日子过得好快呢……", "大坏蛋！你都多久没碰人家了呀，嘤嘤嘤～", "嗨～快来逗我玩吧！", "拿小拳拳锤你胸口！"];
+		messageArray = ["好久不见，日子过得好快呢……", "大坏蛋！你都多久没碰人家了呀", "嗨～快来逗我玩吧！", "拿小拳拳锤你胸口！"];
 	if ($(".fa-share-alt").is(":hidden")) messageArray.push("记得把小家加入Adblock白名单哦！");
 	$(document).mousemove(() => {
 		userAction = true;
@@ -200,7 +200,7 @@ function loadWidget(waifuPath, apiPath) {
 			url: `${apiPath}/rand_textures/?id=${modelId}-${modelTexturesId}`,
 			dataType: "json",
 			success: function(result) {
-				if (result.textures["id"] == 1 && (modelTexturesId == 1 || modelTexturesId == 0)) showMessage("我还没有其他衣服呢！", 4000, 10);
+				if (result.textures["id"] == 1 && (modelTexturesId == 1 || modelTexturesId == 0)) showMessage("太穷了没钱买新衣服！", 4000, 10);
 				else showMessage("我的新衣服好看嘛？", 4000, 10);
 				loadModel(modelId, result.textures["id"]);
 			}

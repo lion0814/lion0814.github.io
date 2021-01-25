@@ -14,7 +14,7 @@
 #waifu {
 	position: fixed;
 	bottom: -1000px;
-	left: 0;
+	right: 20px;
 	z-index: 1;
 	line-height: 0;
 	transition: transform .3s ease-in-out;
@@ -62,7 +62,7 @@
 #waifu-tool {
 	color: #aaa;
 	top: 70px;
-	right: -10px;
+	left: -5px;
 	position: absolute;
 	opacity: 0;
 	transition: opacity 1s;
@@ -75,11 +75,11 @@
 	cursor: pointer;
 	line-height: 30px;
 	text-align: center;
-	color: #5b6c7d;
+	color: #283183b6;
 	transition: color .3s;
 }
 #waifu-tool span:hover {
-	color: #0684bd;/* #34495e */
+	color: #2e1c92;/* #34495e */
 }
 @keyframes shake {
 	2% {
