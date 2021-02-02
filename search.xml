@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>使用git将本地文件上传到github</title>
+      <link href="2021/020246230.html"/>
+      <url>2021/020246230.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="使用git将本地文件上传到github"><a href="#使用git将本地文件上传到github" class="headerlink" title="使用git将本地文件上传到github"></a>使用git将本地文件上传到github</h1><p>git安装：下载地址：<a href="https://git-scm.com/download">https://git-scm.com/download</a></p><p>在需要上传的本地文件中添加 .git文件，用于git管理</p><img src="https://gitee.com/lion0814/picgo/raw/master/img/image-20210202134045676.png" alt="image-20210202134045676" style="zoom:80%;"><p>输入命令    <strong>git init</strong></p><img src="https://gitee.com/lion0814/picgo/raw/master/img/image-20210202134229408.png" alt="image-20210202134229408" style="zoom:80%;"><p>记得勾选显示隐藏的项目</p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20210202152557141.png" alt="image-20210202152557141" style="zoom:80%;"><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20210202134340901.png" alt="image-20210202134340901" style="zoom:80%;"><p>在github创建新仓库用于存储管理本地文件<a href="https://github.com/">https://github.com/</a></p><p>点击账号前的加号（Create New）-&gt; New repository，创建一个新仓库,名字自己定，我这里叫blog。</p><img src="https://gitee.com/lion0814/picgo/raw/master/img/image-20210202143700507.png" alt="image-20210202143700507" style="zoom:67%;"><p>在git bash 中依次输入以下命令</p><p>**git add .**命令，将文件添加到仓库中，注意add和.之间有空格</p><img src="https://gitee.com/lion0814/picgo/raw/master/img/image-20210202144242873.png" alt="image-20210202144242873" style="zoom:80%;"><p><strong>git commit -m “first”</strong> 命令，双引号中的注释first可自定义修改。</p><img src="https://gitee.com/lion0814/picgo/raw/master/img/image-20210202144305732.png" alt="image-20210202144305732" style="zoom:80%;"><p>**git remote add origin https://**自己的仓库url地址</p><img src="https://gitee.com/lion0814/picgo/raw/master/img/image-20210202145124042.png" alt="image-20210202145124042" style="zoom:67%;"><img src="https://gitee.com/lion0814/picgo/raw/master/img/image-20210202144326787.png" alt="image-20210202144326787" style="zoom:80%;"><p>因为Github账号默认的主分支从2020年10月1日起已经由master改为了main，但是Git工具默认推送的还是master分支，这就导致推送的代码在Github上面的main主分支看不到，想要看到代码还需要切换分支。所以可以使用 <strong>git checkout -b main</strong> 命令在Git工具上创建main分支并进入，下图的蓝色括号由master切换为main分支</p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20210202144452674.png" alt="image-20210202144452674" style="zoom:80%;"><p><strong>git push -u origin main -f</strong> 命令进行强制代码推送，推送完成后，Github项目下已经有了相应的文件，且没了README文件</p><img src="https://gitee.com/lion0814/picgo/raw/master/img/image-20210202150916594.png" alt="image-20210202150916594" style="zoom:80%;"><p>如果不加-f ,可能会因为新建仓库的时候勾选了README文件，而本地没有这个文件出现如下报错，需要先将Github上面的README 使用git pull origin main –allow-unrelated-histories（Git新版本使用命令：git pull origin main –allow-unrelated-histories，Git老版本使用命令: git pull origin main）命令pull下来，把远程分支上的提交合并到本地分支之后再推送代码。</p><img src="https://gitee.com/lion0814/picgo/raw/master/img/image-20210202150431592.png" alt="image-20210202150431592" style="zoom:80%;"><p>本地调试和修改之后的代码，需要上传到Github上面，常用的操作指令</p><p>git init    （生成.git,有的话就不需要这个命令了）</p><p>git add .</p><p>git status</p><p>git commit -m “更新了某些内容”</p><p>git remote add origin 仓库地址</p><p>git push origin master/main    （git checkout -b main 命令是在Git工具上创建main分支并进入）</p><p>如果push的过程中提示github上某些文件是本地没有的，那么需要先pull</p><p>git pull origin master（看你的分支是master还是main）</p><p>如果报错 fatal: refusing to merge unrelated histories</p><p>使用命令 git pull origin master –allow-unrelated-histories</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Vue组件之间的数据传递</title>
       <link href="2021/012858601.html"/>
       <url>2021/012858601.html</url>
