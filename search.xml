@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>css清除浮动</title>
+      <link href="2021/022032841.html"/>
+      <url>2021/022032841.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>使用git将本地文件上传到github</title>
       <link href="2021/020246230.html"/>
       <url>2021/020246230.html</url>
@@ -118,17 +131,17 @@
     
     
     <entry>
-      <title>Hello World</title>
-      <link href="2021/012216107.html"/>
-      <url>2021/012216107.html</url>
+      <title>vue电商项目乐购</title>
+      <link href="2020/122055718.html"/>
+      <url>2020/122055718.html</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="vue电商项目-乐购"><a href="#vue电商项目-乐购" class="headerlink" title="vue电商项目-乐购"></a>vue电商项目-乐购</h1><h3 id="项目地址：https-github-com-lion0814-mall"><a href="#项目地址：https-github-com-lion0814-mall" class="headerlink" title="项目地址：https://github.com/lion0814/mall"></a>项目地址：<a href="https://github.com/lion0814/mall">https://github.com/lion0814/mall</a></h3><h3 id="项目描述："><a href="#项目描述：" class="headerlink" title="项目描述："></a>项目描述：</h3><p>这是一个前后端分离的电商项目，使用vue-cli脚手架初始化vue项目，运用了Vue全家桶—+ES6+Webpack等前端新技术，采用了模块化，组件化，工程化的模式开发</p><h3 id="学到的知识："><a href="#学到的知识：" class="headerlink" title="学到的知识："></a>学到的知识：</h3><h4 id="开发一个项目的流程，方法以及思想"><a href="#开发一个项目的流程，方法以及思想" class="headerlink" title="开发一个项目的流程，方法以及思想"></a>开发一个项目的流程，方法以及思想</h4><p>1.学会使用脚手架搭建项目</p><p>2.了解了项目的优化技巧</p><p>3.熟悉组件化，模块化，工程化的开发模式</p><p>4.使用ES6+eslint规范代码</p><h4 id="插件或第三方库"><a href="#插件或第三方库" class="headerlink" title="插件或第三方库"></a>插件或第三方库</h4><p>1.vue-router开发单页面</p><p>2.vuex管理应用组件的状态</p><p>3.better-scroll实现页面的滑动效果</p><p>4.axios的封装与后端数据的交互</p><p>5.vue-lazyload实现图片懒加载</p><h3 id="项目文件及说明"><a href="#项目文件及说明" class="headerlink" title="项目文件及说明"></a>项目文件及说明</h3><table><thead><tr><th align="center">目录/文件</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center">dist</td><td align="center">项目打包后生成的文件</td></tr><tr><td align="center">node_modules</td><td align="center">npm加载的项目依赖模块</td></tr><tr><td align="center">public</td><td align="center">静态资源目录</td></tr><tr><td align="center">src</td><td align="center">存放代码的主要目录，包含了如下几个目录及文件:<br>assets: 放置一些css和图片，如logo等<br>components: 用来放置一些公共的组件<br>router: 路由文件夹，决定页面路由的跳转规则<br>store: vuex的状态管理文件<br>network：用来存放项目中发起请求的js文件模块<br>views：存放页面文件，如首页，分类，购物车等<br>App.vue:应用组件，我们写的所有组件都是在这个组件之上运行的<br>common: 存放一些公共的js文件 混入，防抖等</td></tr><tr><td align="center">package.json</td><td align="center">项目的配置文件，以及一些插件依赖包的信息</td></tr><tr><td align="center">babel.config.js</td><td align="center">用来配置一些UI插件</td></tr><tr><td align="center">package-lock.json</td><td align="center">插件依赖的详细信息</td></tr><tr><td align="center">.gitignore</td><td align="center">git相关文件，配置不上传至git库的文件</td></tr><tr><td align="center">README.md</td><td align="center">项目的说明文档，markdown格式</td></tr></tbody></table><h3 id="项目截图"><a href="#项目截图" class="headerlink" title="项目截图"></a>项目截图</h3><p><strong>首页</strong></p><img src="https://gitee.com/lion0814/picgo/raw/master/img/20210220124307.png" alt="image-20210220124259188" style="zoom:80%;"><img src="https://gitee.com/lion0814/picgo/raw/master/img/20210220124449.png" alt="image-20210220124449178" style="zoom:80%;"><p><strong>分类页</strong></p><img src="https://gitee.com/lion0814/picgo/raw/master/img/20210220124555.png" alt="image-20210220124555931" style="zoom:80%;"><p><strong>购物车</strong></p><img src="https://gitee.com/lion0814/picgo/raw/master/img/20210220125054.png" alt="image-20210220125054764" style="zoom:80%;"><p><strong>我的</strong></p><img src="https://gitee.com/lion0814/picgo/raw/master/img/20210220125220.png" alt="image-20210220125220516" style="zoom:80%;">]]></content>
       
       
       
         <tags>
             
-            <tag> hhh </tag>
+            <tag> vue </tag>
             
         </tags>
       
