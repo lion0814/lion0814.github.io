@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>ajax请求的五个步骤</title>
+      <link href="2021/030530961.html"/>
+      <url>2021/030530961.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="AJAX请求的五个步骤"><a href="#AJAX请求的五个步骤" class="headerlink" title="AJAX请求的五个步骤"></a>AJAX请求的五个步骤</h1><h3 id="1-创建XMLHttpRequest异步对象"><a href="#1-创建XMLHttpRequest异步对象" class="headerlink" title="1.创建XMLHttpRequest异步对象"></a>1.创建XMLHttpRequest异步对象</h3><pre><code>var xhr = new XMLHttpRequest()</code></pre><h3 id="2-设置回调函数"><a href="#2-设置回调函数" class="headerlink" title="2.设置回调函数"></a>2.设置回调函数</h3><pre><code>xhr.onreadystatechange = callback</code></pre><h3 id="3-使用open方法与服务器建立连接"><a href="#3-使用open方法与服务器建立连接" class="headerlink" title="3.使用open方法与服务器建立连接"></a>3.使用open方法与服务器建立连接</h3><pre><code>// get方式xhr.open("get","test.php",true)// post方式xhr.open("post","test.php",true)xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded")</code></pre><h3 id="4-向服务器发送数据"><a href="#4-向服务器发送数据" class="headerlink" title="4.向服务器发送数据"></a>4.向服务器发送数据</h3><pre><code>// get 不需要传递参数xhr.send(null)// post 需要传递参数xhr.send("name=wl&amp;age=18")</code></pre><h3 id="5-在回调函数中针对不同的响应状态进行处理"><a href="#5-在回调函数中针对不同的响应状态进行处理" class="headerlink" title="5.在回调函数中针对不同的响应状态进行处理"></a>5.在回调函数中针对不同的响应状态进行处理</h3><pre><code>function callback() {  //判断异步对象的状态  if(xhr.readyState == 4) {    //判断交互是否成功    if(xhr.status == 200) {      //获取服务器响应的数据      var res = xhr.responseText      //解析数据      res = JSON.parse(res)    }  }}</code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> ajax </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>使用git将本地文件上传到github</title>
       <link href="2021/020246230.html"/>
       <url>2021/020246230.html</url>
